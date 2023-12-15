@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Heebo:wght@400;500&family=Nunito+Sans:opsz@6..12&family=Roboto&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+}
+
+.main-list-items {
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  padding: 1rem;
+}
+
+.main-list-items a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.main-list-items a:hover,
+.main-list-items a:focus {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.main-list-items a:active {
+  color: #ff6464;
+}
+
+#container-1 {
+  display: flex;
+  padding: 2rem;
+  margin-inline: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1rem;
+}
+
+.button a {
+  white-space: nowrap;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ff6464;
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  max-width: 17rem;
+}
+
+.button a:hover {
+  opacity: 0.8;
+}
+
+.profile-picture {
+  order: -1;
+  padding: 1rem;
+}
+
+.profile-picture img {
+  border: 5px double #333;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+#container-2 {
+  display: flex;
+  background-color: #edf7fa;
+  padding: 5rem;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  gap: 1.5rem;
+  text-align: justify;
+  margin-inline: 1rem;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  gap: 1.5rem;
+  text-align: justify;
+  margin-inline: 1rem;
+}
+
+#container-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  display: flex;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.dashboard-context {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard-context a {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard-context a:hover {
+  opacity: 0.8;
+}
+
+.portrait {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.portrait-context {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.portrait-context a {
+  text-decoration: none;
+  color: black;
+}
+
+.portrait-context a:hover {
+  opacity: 0.8;
+}
+
+.mayalam {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.mayalam-context {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mayalam-context a {
+  text-decoration: none;
+  color: black;
+}
+
+.mayalam-context a:hover {
+  opacity: 0.8;
+}
+
+.yearbox-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.yearbox-container :first-child {
+  background-color: #142850;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5rem;
+}
+
+.yearbox-container :last-child {
+  color: #8695a4;
+}
+
+#container-4 {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+#container-4 p {
+  text-align: center;
+}
+
+@media screen and (max-width: 784px) {
+  .hamburger-menu {
+    cursor: pointer;
+    margin-left: auto;
+    padding: 1rem;
+  }
+
+  .main-list-items {
+    display: none;
+  }
+
+  #container-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .dashboard {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dashboard-context {
+    text-align: center;
+  }
+
+  .yearbox-container {
+    justify-content: center;
+  }
+
+  .portrait {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portrait-context {
+    text-align: center;
+  }
+
+  .mayalam {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mayalam-context {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 785px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  #container-1 {
+    flex-wrap: nowrap;
+  }
+  .head-text {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #container-3 {
+    padding: 5rem;
+  }
+}
